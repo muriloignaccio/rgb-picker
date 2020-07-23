@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css" />
+    <script defer src="./public/script.js"></script>
+    <title>RGB Picker</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RGB Picker</title>
-</head>
-
-<body>
-
-</body>
-
+  <body>
+    <div class="container">
+      <div class="rgb-box">
+        <div class="controllers">
+          <div class="controllers__box">
+            <span class="controllers__name">(R) Vermelho</span>
+            <div class="controllers__inputs">
+              <input
+                type="range"
+                min="0"
+                max="255"
+                id="red-slider"
+                value="0"
+                class="controllers__slider"
+              />
+              <input
+                type="number"
+                min="0"
+                max="255"
+                value="0"
+                id="red-input"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="controllers__box">
+            <span class="controllers__name">(G) Verde</span>
+            <div class="controllers__inputs">
+              <input
+                type="range"
+                min="0"
+                max="255"
+                id="green-slider"
+                value="0"
+                class="controllers__slider"
+              />
+              <input
+                type="number"
+                min="0"
+                max="255"
+                value="0"
+                id="green-input"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="controllers__box">
+            <span class="controllers__name">(B) Azul</span>
+            <div class="controllers__inputs">
+              <input
+                type="range"
+                min="0"
+                max="255"
+                id="blue-slider"
+                value="0"
+                class="controllers__slider"
+              />
+              <input
+                type="number"
+                min="0"
+                max="255"
+                value="0"
+                id="blue-input"
+                disabled
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
