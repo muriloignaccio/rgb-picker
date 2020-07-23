@@ -1,5 +1,8 @@
 const container = document.querySelector('.container');
 
+const authorName = document.querySelector('.author__name');
+const authorHeart = document.querySelector('.author__heart');
+
 const [
   redColorSlider,
   greenColorSlider,
@@ -14,6 +17,8 @@ const [
 
 const updateColor = () => {
   container.style.backgroundColor = `rgba(${redColorInput.value}, ${greenColorInput.value}, ${blueColorInput.value})`;
+  authorName.style.color = `rgba(${redColorInput.value}, ${greenColorInput.value}, ${blueColorInput.value})`;
+  authorHeart.style.stroke = `rgba(${redColorInput.value}, ${greenColorInput.value}, ${blueColorInput.value})`;
 };
 
 redColorSlider.oninput = ({ target: { value } }) => {
